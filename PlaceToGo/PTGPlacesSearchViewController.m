@@ -6,13 +6,13 @@
 //  Copyright © 2016 Nikolay Andonov. All rights reserved.
 //
 
-#import "PTGMainScreenViewController.h"
+#import "PTGPlacesSearchViewController.h"
 
-@interface PTGMainScreenViewController ()
+@interface PTGPlacesSearchViewController ()
 
 @end
 
-@implementation PTGMainScreenViewController
+@implementation PTGPlacesSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

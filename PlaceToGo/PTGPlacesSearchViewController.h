@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PTGMainScreenViewController : UIViewController
+@interface PTGPlacesSearchViewController : UIViewController
 
 
 @end
