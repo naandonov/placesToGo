@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E0CEE401CE37436005C9D85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE3F1CE37436005C9D85 /* main.m */; };
 		4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE421CE37436005C9D85 /* PTGAppDelegate.m */; };
-		4E0CEE461CE37436005C9D85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE451CE37436005C9D85 /* ViewController.m */; };
+		4E0CEE461CE37436005C9D85 /* PTGMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE451CE37436005C9D85 /* PTGMainScreenViewController.m */; };
 		4E0CEE491CE37436005C9D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE471CE37436005C9D85 /* Main.storyboard */; };
 		4E0CEE4B1CE37436005C9D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE4A1CE37436005C9D85 /* Assets.xcassets */; };
 		4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		4E0CEE3F1CE37436005C9D85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E0CEE411CE37436005C9D85 /* PTGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGAppDelegate.h; sourceTree = "<group>"; };
 		4E0CEE421CE37436005C9D85 /* PTGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGAppDelegate.m; sourceTree = "<group>"; };
-		4E0CEE441CE37436005C9D85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E0CEE451CE37436005C9D85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E0CEE441CE37436005C9D85 /* PTGMainScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGMainScreenViewController.h; sourceTree = "<group>"; };
+		4E0CEE451CE37436005C9D85 /* PTGMainScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGMainScreenViewController.m; sourceTree = "<group>"; };
 		4E0CEE481CE37436005C9D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E0CEE4A1CE37436005C9D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0CEE4D1CE37436005C9D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,11 @@
 		4E0CEE3D1CE37436005C9D85 /* PlaceToGo */ = {
 			isa = PBXGroup;
 			children = (
+				771E71571CE384F200FB83E1 /* Models */,
+				771E71561CE384E700FB83E1 /* Views */,
+				771E71551CE384DE00FB83E1 /* VIewControllers */,
 				4E0CEE411CE37436005C9D85 /* PTGAppDelegate.h */,
 				4E0CEE421CE37436005C9D85 /* PTGAppDelegate.m */,
-				4E0CEE441CE37436005C9D85 /* ViewController.h */,
-				4E0CEE451CE37436005C9D85 /* ViewController.m */,
 				4E0CEE471CE37436005C9D85 /* Main.storyboard */,
 				4E0CEE4A1CE37436005C9D85 /* Assets.xcassets */,
 				4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */,
@@ -138,6 +139,29 @@
 				4E0CEE651CE37437005C9D85 /* Info.plist */,
 			);
 			path = PlaceToGoUITests;
+			sourceTree = "<group>";
+		};
+		771E71551CE384DE00FB83E1 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E0CEE441CE37436005C9D85 /* PTGMainScreenViewController.h */,
+				4E0CEE451CE37436005C9D85 /* PTGMainScreenViewController.m */,
+			);
+			name = VIewControllers;
+			sourceTree = "<group>";
+		};
+		771E71561CE384E700FB83E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		771E71571CE384F200FB83E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0CEE461CE37436005C9D85 /* ViewController.m in Sources */,
+				4E0CEE461CE37436005C9D85 /* PTGMainScreenViewController.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
 			);
@@ -501,6 +525,7 @@
 				4E0CEE6A1CE37437005C9D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E0CEE6B1CE37437005C9D85 /* Build configuration list for PBXNativeTarget "PlaceToGoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +534,7 @@
 				4E0CEE6D1CE37437005C9D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E0CEE6E1CE37437005C9D85 /* Build configuration list for PBXNativeTarget "PlaceToGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +543,7 @@
 				4E0CEE701CE37437005C9D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

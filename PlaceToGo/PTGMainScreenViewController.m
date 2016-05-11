@@ -6,13 +6,13 @@
 //  Copyright © 2016 Nikolay Andonov. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PTGMainScreenViewController.h"
 
-@interface ViewController ()
+@interface PTGMainScreenViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PTGMainScreenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
