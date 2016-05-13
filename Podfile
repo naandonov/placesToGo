@@ -5,6 +5,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'PlaceToGo' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'SSKeychain'
+  pod 'SSKeychain', '~>1.4.0'
 
 end

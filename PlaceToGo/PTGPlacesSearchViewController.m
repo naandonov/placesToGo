@@ -7,6 +7,7 @@
 //
 
 #import "PTGPlacesSearchViewController.h"
+#import "PTGVenueRequest.h"
 
 @interface PTGPlacesSearchViewController ()
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PTGVenueRequest *req = [[PTGVenueRequest alloc] initWithURL:[NSURL URLWithString:@"https://api.foursquare.com/v2/venues/search/"]
+                                                  andParameters:@{@"near":@"Sofia"}];
+    [req initializeSession];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

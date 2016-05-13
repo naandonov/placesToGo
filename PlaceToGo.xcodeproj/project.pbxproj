@@ -17,7 +17,16 @@
 		4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */; };
 		775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775428671CE4BAA200DC5056 /* PTGNetworkManager.m */; };
 		7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */; };
-		775428711CE4D6B100DC5056 /* BZFoursquare in Resources */ = {isa = PBXBuildFile; fileRef = 775428701CE4D6B100DC5056 /* BZFoursquare */; };
+		776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
+		776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
+		776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
+		777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */; };
+		777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
+		777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
+		777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
+		77AC1BE31CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
+		77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
+		77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
 		AC0C6186E97C49AEFD96CCA2 /* libPods-PlaceToGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A064F979E174C71B91822920 /* libPods-PlaceToGo.a */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +69,14 @@
 		775428671CE4BAA200DC5056 /* PTGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGNetworkManager.m; sourceTree = "<group>"; };
 		775428691CE4C04000DC5056 /* PTGCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCredentialStore.h; sourceTree = "<group>"; };
 		7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCredentialStore.m; sourceTree = "<group>"; };
-		775428701CE4D6B100DC5056 /* BZFoursquare */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BZFoursquare; sourceTree = "<group>"; };
+		776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLoginViewController.h; sourceTree = "<group>"; };
+		776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLoginViewController.m; sourceTree = "<group>"; };
+		777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSavedPlacesViewController.h; sourceTree = "<group>"; };
+		777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSavedPlacesViewController.m; sourceTree = "<group>"; };
+		777AE71B1CE5FD43001A77EC /* APIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstants.h; sourceTree = "<group>"; };
+		777AE71C1CE5FD43001A77EC /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
+		77AC1BE11CE63526005A3A14 /* PTGVenueRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGVenueRequest.h; sourceTree = "<group>"; };
+		77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGVenueRequest.m; sourceTree = "<group>"; };
 		A064F979E174C71B91822920 /* libPods-PlaceToGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaceToGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B669222B13A6E9D0ED7CBF /* Pods-PlaceToGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +132,7 @@
 		4E0CEE3D1CE37436005C9D85 /* PlaceToGo */ = {
 			isa = PBXGroup;
 			children = (
-				775428701CE4D6B100DC5056 /* BZFoursquare */,
+				777AE71A1CE5FD2C001A77EC /* Networking */,
 				771E71571CE384F200FB83E1 /* Models */,
 				771E71561CE384E700FB83E1 /* Views */,
 				771E71551CE384DE00FB83E1 /* VIewControllers */,
@@ -128,8 +144,6 @@
 				4E0CEE4F1CE37436005C9D85 /* Info.plist */,
 				775428691CE4C04000DC5056 /* PTGCredentialStore.h */,
 				7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */,
-				775428661CE4BAA200DC5056 /* PTGNetworkManager.h */,
-				775428671CE4BAA200DC5056 /* PTGNetworkManager.m */,
 				4E0CEE3E1CE37436005C9D85 /* Supporting Files */,
 			);
 			path = PlaceToGo;
@@ -166,6 +180,10 @@
 			children = (
 				4E0CEE441CE37436005C9D85 /* PTGPlacesSearchViewController.h */,
 				4E0CEE451CE37436005C9D85 /* PTGPlacesSearchViewController.m */,
+				777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */,
+				777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */,
+				776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */,
+				776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -182,6 +200,27 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		777AE71A1CE5FD2C001A77EC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				777AE7201CE5FED7001A77EC /* Requests */,
+				777AE71B1CE5FD43001A77EC /* APIConstants.h */,
+				777AE71C1CE5FD43001A77EC /* APIConstants.m */,
+				775428661CE4BAA200DC5056 /* PTGNetworkManager.h */,
+				775428671CE4BAA200DC5056 /* PTGNetworkManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		777AE7201CE5FED7001A77EC /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				77AC1BE11CE63526005A3A14 /* PTGVenueRequest.h */,
+				77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 		B8363904E6B19F9373212384 /* Pods */ = {
@@ -309,7 +348,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */,
-				775428711CE4D6B100DC5056 /* BZFoursquare in Resources */,
 				4E0CEE4B1CE37436005C9D85 /* Assets.xcassets in Resources */,
 				4E0CEE491CE37436005C9D85 /* Main.storyboard in Resources */,
 			);
@@ -385,9 +423,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0CEE461CE37436005C9D85 /* PTGPlacesSearchViewController.m in Sources */,
+				77AC1BE31CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
+				777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
+				777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */,
+				776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +438,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */,
+				776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */,
+				77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */,
+				776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */,
+				77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

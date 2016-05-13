@@ -8,36 +8,63 @@
         <!--Item 2-->
         <scene sceneID="qqE-xJ-AUz">
             <objects>
-                <viewController id="ARE-xb-eXw" sceneMemberID="viewController">
+                <viewController id="ARE-xb-eXw" customClass="PTGSavedPlacesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kwz-1B-NBj"/>
                         <viewControllerLayoutGuide type="bottom" id="mlX-jY-qpP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="94E-Rz-CKR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="tkY-Hd-z56"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZc-D3-a0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1361" y="-163"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="WcT-jW-nwG">
+            <objects>
+                <viewController id="eAz-hc-aWZ" customClass="PTGLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q7V-f1-mAy"/>
+                        <viewControllerLayoutGuide type="bottom" id="5QK-gY-zCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7a4-if-jVw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="317-2h-Cbi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="503"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaU-sK-oyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1899" y="-650"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="lgo-p3-Z85">
             <objects>
-                <viewController id="7J8-hc-3jK" sceneMemberID="viewController">
+                <viewController id="7J8-hc-3jK" customClass="PTGPlacesSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9gW-1v-PCt"/>
                         <viewControllerLayoutGuide type="bottom" id="JO3-pT-4Hd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UAD-5A-8Ag">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="NdR-eh-tiG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnD-ic-Ric" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +74,7 @@
         <scene sceneID="E5Y-i2-loY">
             <objects>
                 <tabBarController id="t1X-AX-NMl" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Gwj-r1-xh1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

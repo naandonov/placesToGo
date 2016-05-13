@@ -11,5 +11,6 @@
 @interface PTGNetworkManager : NSObject
 
 + (PTGNetworkManager *) sharedManager;
+- (NSURLSessionTask *) taskWithRequest:(NSURLRequest *) request;
 
 @end
