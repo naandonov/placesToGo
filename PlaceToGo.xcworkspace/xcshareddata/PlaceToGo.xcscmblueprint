@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B7C9ED1492749E7FB23869F4F6B0BD9FC625732",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7B7C9ED1492749E7FB23869F4F6B0BD9FC625732" : 0,
+    "83EF5C1B6A2EC40EC2D9885D39D2BD7EC657B7DF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C6CE4F92-B00C-46A3-B36F-99534204864E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7B7C9ED1492749E7FB23869F4F6B0BD9FC625732" : "placesToGo\/",
+    "83EF5C1B6A2EC40EC2D9885D39D2BD7EC657B7DF" : "placesToGo\/foursquare-ios-api\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PlaceToGo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PlaceToGo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/naandonov\/placesToGo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B7C9ED1492749E7FB23869F4F6B0BD9FC625732"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gooichi\/foursquare-ios-api.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "83EF5C1B6A2EC40EC2D9885D39D2BD7EC657B7DF"
+    }
+  ]
+}

@@ -15,6 +15,9 @@
 		4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */; };
 		4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE581CE37437005C9D85 /* PlaceToGoTests.m */; };
 		4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */; };
+		775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775428671CE4BAA200DC5056 /* PTGNetworkManager.m */; };
+		7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */; };
+		775428711CE4D6B100DC5056 /* BZFoursquare in Resources */ = {isa = PBXBuildFile; fileRef = 775428701CE4D6B100DC5056 /* BZFoursquare */; };
 		AC0C6186E97C49AEFD96CCA2 /* libPods-PlaceToGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A064F979E174C71B91822920 /* libPods-PlaceToGo.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,11 @@
 		4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceToGoUITests.m; sourceTree = "<group>"; };
 		4E0CEE651CE37437005C9D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68E27BD73D34DD2CA8E4D5FC /* Pods-PlaceToGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.release.xcconfig"; sourceTree = "<group>"; };
+		775428661CE4BAA200DC5056 /* PTGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGNetworkManager.h; sourceTree = "<group>"; };
+		775428671CE4BAA200DC5056 /* PTGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGNetworkManager.m; sourceTree = "<group>"; };
+		775428691CE4C04000DC5056 /* PTGCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCredentialStore.h; sourceTree = "<group>"; };
+		7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCredentialStore.m; sourceTree = "<group>"; };
+		775428701CE4D6B100DC5056 /* BZFoursquare */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BZFoursquare; sourceTree = "<group>"; };
 		A064F979E174C71B91822920 /* libPods-PlaceToGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaceToGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B669222B13A6E9D0ED7CBF /* Pods-PlaceToGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +116,7 @@
 		4E0CEE3D1CE37436005C9D85 /* PlaceToGo */ = {
 			isa = PBXGroup;
 			children = (
+				775428701CE4D6B100DC5056 /* BZFoursquare */,
 				771E71571CE384F200FB83E1 /* Models */,
 				771E71561CE384E700FB83E1 /* Views */,
 				771E71551CE384DE00FB83E1 /* VIewControllers */,
@@ -117,6 +126,10 @@
 				4E0CEE4A1CE37436005C9D85 /* Assets.xcassets */,
 				4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */,
 				4E0CEE4F1CE37436005C9D85 /* Info.plist */,
+				775428691CE4C04000DC5056 /* PTGCredentialStore.h */,
+				7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */,
+				775428661CE4BAA200DC5056 /* PTGNetworkManager.h */,
+				775428671CE4BAA200DC5056 /* PTGNetworkManager.m */,
 				4E0CEE3E1CE37436005C9D85 /* Supporting Files */,
 			);
 			path = PlaceToGo;
@@ -296,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */,
+				775428711CE4D6B100DC5056 /* BZFoursquare in Resources */,
 				4E0CEE4B1CE37436005C9D85 /* Assets.xcassets in Resources */,
 				4E0CEE491CE37436005C9D85 /* Main.storyboard in Resources */,
 			);
@@ -372,7 +386,9 @@
 			files = (
 				4E0CEE461CE37436005C9D85 /* PTGPlacesSearchViewController.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
+				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
+				7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
