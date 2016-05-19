@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PTGBaseRequest.h"
 
-@interface PTGVenueRequest : NSURLRequest
+@interface PTGVenueRequest : PTGBaseRequest
 - (instancetype)initWithURL:(NSURL *) url andParameters:(NSDictionary *) params;
-- (void)initializeSession;
+- (void)initializeSessionWithCompletition:(void(^)(NSData *data, NSURLResponse *response, NSError *error))completition;
 @end

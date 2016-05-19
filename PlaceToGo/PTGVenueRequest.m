@@ -8,7 +8,8 @@
 
 #import "PTGVenueRequest.h"
 #import "PTGNetworkManager.h"
-
+#import <SSKeychain/SSKeychain.h>
+#import "APIConstants.h"
 @interface PTGVenueRequest ()
 
 @end
@@ -17,17 +18,26 @@
 @implementation PTGVenueRequest
 
 - (instancetype)initWithURL:(NSURL *) url andParameters:(NSDictionary *) params{
-    
-    NSURLComponents *comps = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
-    
-    comps.queryItems = @[];
-    self = [super initWithURL:comps.URL];
+    self = [super initWithURL:[NSURL URLWithString:foursquareVenueEndpoint]];
+    [self appendURLQueryWithQueries:params];
     return self;
 }
 
-- (void)initializeSession{
-    [[[PTGNetworkManager sharedManager] taskWithRequest:self] resume];
+
+
+- (void)initializeSessionWithCompletition:(void(^)(NSData *data, NSURLResponse *response, NSError *error))completion{
+    [[PTGNetworkManager sharedManager] taskWithRequest:self completion:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSLog(@"I'm doing something here...\n\n\n");
+        
+        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSLog(@"%@", [[[dictionary objectForKey:@"response"] objectForKey:@"categories"] valueForKey:@"name"]);
+        
+        if (completion) {
+            completion(data,response,error);
+        }
+    }];
 }
+
 
 
 @end

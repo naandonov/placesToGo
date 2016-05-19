@@ -17,6 +17,7 @@
 		4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */; };
 		775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775428671CE4BAA200DC5056 /* PTGNetworkManager.m */; };
 		7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */; };
+		776A09E41CEA33AC00E6632B /* PTGBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */; };
 		776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
@@ -27,6 +28,30 @@
 		77AC1BE31CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
 		77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
 		77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
+		77ADC2881CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */; };
+		77ADC2891CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */; };
+		77ADC28A1CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */; };
+		77ADC2901CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28D1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m */; };
+		77ADC2911CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28D1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m */; };
+		77ADC2921CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28D1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m */; };
+		77ADC2931CEB47E4002432FA /* PTGCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28F1CEB47E4002432FA /* PTGCategoryEntity.m */; };
+		77ADC2941CEB47E4002432FA /* PTGCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28F1CEB47E4002432FA /* PTGCategoryEntity.m */; };
+		77ADC2951CEB47E4002432FA /* PTGCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC28F1CEB47E4002432FA /* PTGCategoryEntity.m */; };
+		77ADC29B1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2981CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m */; };
+		77ADC29C1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2981CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m */; };
+		77ADC29D1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2981CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m */; };
+		77ADC29E1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC29A1CEB4891002432FA /* PTGUserSettingsEntity.m */; };
+		77ADC29F1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC29A1CEB4891002432FA /* PTGUserSettingsEntity.m */; };
+		77ADC2A01CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC29A1CEB4891002432FA /* PTGUserSettingsEntity.m */; };
+		77ADC2A31CEB5E27002432FA /* PTGCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A21CEB5E27002432FA /* PTGCoreDataManager.m */; };
+		77ADC2A41CEB5E27002432FA /* PTGCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A21CEB5E27002432FA /* PTGCoreDataManager.m */; };
+		77ADC2A51CEB5E27002432FA /* PTGCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A21CEB5E27002432FA /* PTGCoreDataManager.m */; };
+		77ADC2A81CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */; };
+		77ADC2A91CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */; };
+		77ADC2AA1CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */; };
+		77ADC2AD1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */; };
+		77ADC2AE1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */; };
+		77ADC2AF1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */; };
 		AC0C6186E97C49AEFD96CCA2 /* libPods-PlaceToGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A064F979E174C71B91822920 /* libPods-PlaceToGo.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +94,8 @@
 		775428671CE4BAA200DC5056 /* PTGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGNetworkManager.m; sourceTree = "<group>"; };
 		775428691CE4C04000DC5056 /* PTGCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCredentialStore.h; sourceTree = "<group>"; };
 		7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCredentialStore.m; sourceTree = "<group>"; };
+		776A09E21CEA33AC00E6632B /* PTGBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGBaseRequest.h; sourceTree = "<group>"; };
+		776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGBaseRequest.m; sourceTree = "<group>"; };
 		776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLoginViewController.h; sourceTree = "<group>"; };
 		776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLoginViewController.m; sourceTree = "<group>"; };
 		777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSavedPlacesViewController.h; sourceTree = "<group>"; };
@@ -77,6 +104,21 @@
 		777AE71C1CE5FD43001A77EC /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
 		77AC1BE11CE63526005A3A14 /* PTGVenueRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGVenueRequest.h; sourceTree = "<group>"; };
 		77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGVenueRequest.m; sourceTree = "<group>"; };
+		77ADC2871CEB3906002432FA /* PTGDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTGDataModel.xcdatamodel; sourceTree = "<group>"; };
+		77ADC28C1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTGCategoryEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		77ADC28D1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PTGCategoryEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		77ADC28E1CEB47E4002432FA /* PTGCategoryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCategoryEntity.h; sourceTree = "<group>"; };
+		77ADC28F1CEB47E4002432FA /* PTGCategoryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCategoryEntity.m; sourceTree = "<group>"; };
+		77ADC2971CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTGUserSettingsEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		77ADC2981CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PTGUserSettingsEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		77ADC2991CEB4891002432FA /* PTGUserSettingsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGUserSettingsEntity.h; sourceTree = "<group>"; };
+		77ADC29A1CEB4891002432FA /* PTGUserSettingsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGUserSettingsEntity.m; sourceTree = "<group>"; };
+		77ADC2A11CEB5E27002432FA /* PTGCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCoreDataManager.h; sourceTree = "<group>"; };
+		77ADC2A21CEB5E27002432FA /* PTGCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCoreDataManager.m; sourceTree = "<group>"; };
+		77ADC2A61CEB64A6002432FA /* PTGCoreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCoreDataHandler.h; sourceTree = "<group>"; };
+		77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCoreDataHandler.m; sourceTree = "<group>"; };
+		77ADC2AB1CEB86BA002432FA /* PTGCategoriesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCategoriesRequest.h; sourceTree = "<group>"; };
+		77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCategoriesRequest.m; sourceTree = "<group>"; };
 		A064F979E174C71B91822920 /* libPods-PlaceToGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaceToGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B669222B13A6E9D0ED7CBF /* Pods-PlaceToGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +152,8 @@
 		4E0CEE321CE37436005C9D85 = {
 			isa = PBXGroup;
 			children = (
+				77ADC28B1CEB47A9002432FA /* Core Data */,
+				77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */,
 				4E0CEE3D1CE37436005C9D85 /* PlaceToGo */,
 				4E0CEE571CE37437005C9D85 /* PlaceToGoTests */,
 				4E0CEE621CE37437005C9D85 /* PlaceToGoUITests */,
@@ -219,8 +263,39 @@
 			children = (
 				77AC1BE11CE63526005A3A14 /* PTGVenueRequest.h */,
 				77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */,
+				776A09E21CEA33AC00E6632B /* PTGBaseRequest.h */,
+				776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */,
+				77ADC2AB1CEB86BA002432FA /* PTGCategoriesRequest.h */,
+				77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */,
 			);
 			name = Requests;
+			sourceTree = "<group>";
+		};
+		77ADC28B1CEB47A9002432FA /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				77ADC2961CEB47E8002432FA /* Entities */,
+				77ADC2A11CEB5E27002432FA /* PTGCoreDataManager.h */,
+				77ADC2A21CEB5E27002432FA /* PTGCoreDataManager.m */,
+				77ADC2A61CEB64A6002432FA /* PTGCoreDataHandler.h */,
+				77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		77ADC2961CEB47E8002432FA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				77ADC2971CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.h */,
+				77ADC2981CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m */,
+				77ADC2991CEB4891002432FA /* PTGUserSettingsEntity.h */,
+				77ADC29A1CEB4891002432FA /* PTGUserSettingsEntity.m */,
+				77ADC28C1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.h */,
+				77ADC28D1CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m */,
+				77ADC28E1CEB47E4002432FA /* PTGCategoryEntity.h */,
+				77ADC28F1CEB47E4002432FA /* PTGCategoryEntity.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		B8363904E6B19F9373212384 /* Pods */ = {
@@ -424,13 +499,22 @@
 			files = (
 				4E0CEE461CE37436005C9D85 /* PTGPlacesSearchViewController.m in Sources */,
 				77AC1BE31CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
+				77ADC2901CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
+				77ADC2A81CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
+				77ADC2931CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
+				776A09E41CEA33AC00E6632B /* PTGBaseRequest.m in Sources */,
+				77ADC29B1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */,
+				77ADC2A31CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
 				777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */,
+				77ADC2AD1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */,
+				77ADC2881CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
+				77ADC29E1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,10 +522,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ADC29C1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */,
+				77ADC2A41CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
+				77ADC2911CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
+				77ADC2A91CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */,
+				77ADC2AE1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
+				77ADC2941CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
 				77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
+				77ADC2891CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
+				77ADC29F1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +541,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ADC29D1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */,
+				77ADC2A51CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
+				77ADC2921CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
+				77ADC2AA1CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */,
+				77ADC2AF1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
+				77ADC2951CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
 				77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
+				77ADC28A1CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
+				77ADC2A01CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +787,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77ADC2871CEB3906002432FA /* PTGDataModel.xcdatamodel */,
+			);
+			currentVersion = 77ADC2871CEB3906002432FA /* PTGDataModel.xcdatamodel */;
+			path = PTGDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E0CEE331CE37436005C9D85 /* Project object */;
 }

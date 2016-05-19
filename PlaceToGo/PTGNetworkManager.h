@@ -11,6 +11,7 @@
 @interface PTGNetworkManager : NSObject
 
 + (PTGNetworkManager *) sharedManager;
-- (NSURLSessionTask *) taskWithRequest:(NSURLRequest *) request;
+- (void) taskWithRequest:(NSURLRequest *) request completion: (void(^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+- (void) downloadImageFromURL:(NSURL *)url andImageID:(NSString *)imageID completion:(void(^)(NSURL *newFileLocation, NSError *imageError))completion;
 
 @end

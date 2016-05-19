@@ -7,14 +7,23 @@
 //
 
 #import "PTGCredentialStore.h"
+#import "SSKeychain/SSKeychain.h"
+#import "APIConstants.h"
+
+
 static NSString *accessToken;
+static NSString *const accountName = @"PlaceToGoAccountName";
+static NSString *const serviceName = @"PlaceToGoAccountService";
 
 @implementation PTGCredentialStore
 
 #pragma mark - User check
 
 + (BOOL) isThereAuthenticatedUser{
-    return YES;
+    if ([self getAccessToken]) {
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark - AccessToken manipulation
@@ -24,10 +33,12 @@ static NSString *accessToken;
 }
 
 + (void) setAccessToken:(NSString *) token{
+    [SSKeychain setPassword:token forService:serviceName account:accountName];
     accessToken = token;
 }
 
 + (void) deleteAccessToken{
+    [SSKeychain deletePasswordForService:serviceName account:accountName];
     accessToken = nil;
 }
 

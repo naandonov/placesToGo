@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="PTGCategoryEntity" representedClassName="PTGCategoryEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PTGUserSettingsEntity" representedClassName="PTGUserSettingsEntity" syncable="YES">
+        <attribute name="countLimit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="radius" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sorting" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PTGCategoryEntity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="PTGUserSettingsEntity" positionX="-54" positionY="18" width="128" height="90"/>
+    </elements>
+</model>

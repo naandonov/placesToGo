@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface APIConstants : NSObject
+
+extern NSString *const foursquareClientID;
+extern NSString *const foursquareClientSecret;
+extern NSString *const foursquareAPIVersion;
+extern NSString *const foursquareVenueEndpoint;
+extern NSString *const foursquareHttpGET;
+extern NSString *const foursquareHttpPOST;
+extern NSString *const foursquareIconSize;
 
 @end

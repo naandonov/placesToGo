@@ -10,9 +10,12 @@
 
 @implementation APIConstants
 
-NSString *const serviceName = @"";
-NSString *const clientID = @"S1H4UTLND430NCWPL0HNTAKF2F0NKSZZM2TEJUXWXOEJWFJ1";
-NSString *const clientSecret = @"PT15GJTFW003NO2PWKQ5BA3N1LB22BAM4GS0A1YCLRRPKI3K";
-
+NSString *const foursquareClientID = @"S1H4UTLND430NCWPL0HNTAKF2F0NKSZZM2TEJUXWXOEJWFJ1";
+NSString *const foursquareClientSecret = @"PT15GJTFW003NO2PWKQ5BA3N1LB22BAM4GS0A1YCLRRPKI3K";
+NSString *const foursquareAPIVersion = @"20160516";
+NSString *const foursquareVenueEndpoint = @"https://api.foursquare.com/v2/venues";
+NSString *const foursquareHttpGET = @"GET";
+NSString *const foursquareHttpPOST = @"POST";
+NSString *const foursquareIconSize = @"88";
 
 @end
