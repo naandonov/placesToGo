@@ -41,6 +41,8 @@ static NSString *const foursquareCategoryEndpointExtension = @"categories";
             [[PTGNetworkManager sharedManager] downloadImageFromURL:[NSURL URLWithString:iconPath] andImageID:categoryID completion:^(NSURL *newFileLocation, NSError *imageError) {
                 
                 NSString *newIconPath = newFileLocation.absoluteString;
+                newIconPath = [[newIconPath stringByDeletingLastPathComponent] lastPathComponent];
+                newIconPath = [newIconPath stringByAppendingPathComponent:[newFileLocation.absoluteString lastPathComponent]];
                 [categoriesDictionary addObject:@{@"name":[dict valueForKey:@"name"],
                                                   @"id":categoryID,
                                                   @"iconPath":newIconPath}];
