@@ -9,8 +9,11 @@
 #import "PTGBaseRequest.h"
 
 @interface PTGCategoriesRequest : PTGBaseRequest
+extern NSString *const nameKey;
+extern NSString *const idKey;
+extern NSString *const iconPathKey;
 
-- (instancetype)initWithParameters:(NSDictionary *) params;
-- (void)initializeSessionWithCompletition:(void(^)(NSArray <NSDictionary *> *dict, NSError *error))completionHandler;
+- (instancetype)initRequest;
+- (void)getCategoriesWithCompletion:(void(^)(NSArray <NSDictionary *> *dict, NSError *error))completionHandler;
 
 @end

@@ -114,9 +114,6 @@
                                     <segue destination="eAz-hc-aWZ" kind="show" id="Z3R-Ml-yy9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RUb-cH-vi3">
-                                <rect key="frame" x="117" y="431" width="88" height="88"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -124,7 +121,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="6lM-ql-9RL" id="DH2-FR-AT2"/>
-                        <outlet property="something" destination="RUb-cH-vi3" id="Kd5-7z-17D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnD-ic-Ric" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,10 @@
 #pragma mark - NSFetchedResultsController
 + (NSFetchedResultsController *) searchScreenFetchedResultsControllerInContext:(NSManagedObjectContext *)context{
     NSFetchedResultsController *fetchedRC = nil;
-    fetchedRC = [[NSFetchedResultsController alloc]initWithFetchRequest:[NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([PTGCategoryEntity class])]
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([PTGCategoryEntity class])];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+    fetchRequest.sortDescriptors = @[sortDescriptor];
+    fetchedRC = [[NSFetchedResultsController alloc]initWithFetchRequest:fetchRequest
                                                    managedObjectContext:[[PTGCoreDataManager sharedManager] managedObjectContext]
                                                      sectionNameKeyPath:nil
                                                               cacheName:nil];
@@ -33,6 +36,5 @@
     }];
     return category;
 }
-
 
 @end
