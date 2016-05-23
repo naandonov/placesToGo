@@ -1,3 +1,4 @@
+
 //
 //  PTGCategoriesRequest.m
 //  PlaceToGo
@@ -10,19 +11,19 @@
 #import "PTGNetworkManager.h"
 #import "APIConstants.h"
 
-static NSString *const foursquareCategoryEndpointExtension = @"categories";
-NSString *const nameKey = @"name";
-NSString *const idKey = @"idKey";
-NSString *const iconPathKey = @"iconPath";
+static NSString *const kFoursquareCategoryEndpointExtension = @"categories";
+NSString *const kNameKey = @"name";
+NSString *const kIDKey = @"kIDKey";
+NSString *const kIconPathKey = @"iconPath";
 @implementation PTGCategoriesRequest
 
 
 
 - (instancetype)initRequest{
-    NSString *urlString = [foursquareVenueEndpoint stringByAppendingPathComponent:foursquareCategoryEndpointExtension];
+    NSString *urlString = [kFoursquareVenueEndpoint stringByAppendingPathComponent:kFoursquareCategoryEndpointExtension];
     
     self = [super initWithURL:[NSURL URLWithString:urlString]];
-    self.HTTPMethod = foursquareHttpGET;
+    self.HTTPMethod = kFoursquareHttpGET;
     return self;
 }
 
@@ -35,7 +36,7 @@ NSString *const iconPathKey = @"iconPath";
         for (NSDictionary *dict in categoriesArray) {
             
             NSDictionary *icon = [dict valueForKey:@"icon"] ;
-            NSString *iconPath = [NSString stringWithFormat:@"%@%@%@",[icon valueForKey:@"prefix"],foursquareIconSize,[icon valueForKey:@"suffix"]];
+            NSString *iconPath = [NSString stringWithFormat:@"%@%@%@",[icon valueForKey:@"prefix"],kFoursquareIconSize,[icon valueForKey:@"suffix"]];
             NSString *categoryID = [dict valueForKey:@"id"];
             
             dispatch_group_enter(group);
@@ -44,9 +45,9 @@ NSString *const iconPathKey = @"iconPath";
                 NSString *newIconPath = newFileLocation.absoluteString;
                 newIconPath = [[newIconPath stringByDeletingLastPathComponent] lastPathComponent];
                 newIconPath = [newIconPath stringByAppendingPathComponent:[newFileLocation.absoluteString lastPathComponent]];
-                [categoriesDictionary addObject:@{nameKey:[dict valueForKey:nameKey],
-                                                  idKey:categoryID,
-                                                  iconPathKey:newIconPath}];
+                [categoriesDictionary addObject:@{kNameKey:[dict valueForKey:kNameKey],
+                                                  kIDKey:categoryID,
+                                                  kIconPathKey:newIconPath}];
                 dispatch_group_leave(group);
             }];
         }

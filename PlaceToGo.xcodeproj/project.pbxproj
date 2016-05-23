@@ -15,9 +15,21 @@
 		4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */; };
 		4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE581CE37437005C9D85 /* PlaceToGoTests.m */; };
 		4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */; };
+		774C6BA21CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
+		774C6BA31CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
+		774C6BA41CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
+		774C6BA71CEF52D60000B502 /* PTGMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA61CEF52D60000B502 /* PTGMenuViewController.m */; };
+		774C6BA81CEF52D60000B502 /* PTGMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA61CEF52D60000B502 /* PTGMenuViewController.m */; };
+		774C6BA91CEF52D60000B502 /* PTGMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA61CEF52D60000B502 /* PTGMenuViewController.m */; };
+		774C6BAC1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BAB1CEF67640000B502 /* PTGAuthenticationRequest.m */; };
+		774C6BAD1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BAB1CEF67640000B502 /* PTGAuthenticationRequest.m */; };
+		774C6BAE1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BAB1CEF67640000B502 /* PTGAuthenticationRequest.m */; };
 		775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 775428671CE4BAA200DC5056 /* PTGNetworkManager.m */; };
 		7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */; };
 		776A09E41CEA33AC00E6632B /* PTGBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */; };
+		776A0CD71CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */; };
+		776A0CD81CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */; };
+		776A0CD91CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */; };
 		776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
@@ -90,12 +102,20 @@
 		4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceToGoUITests.m; sourceTree = "<group>"; };
 		4E0CEE651CE37437005C9D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68E27BD73D34DD2CA8E4D5FC /* Pods-PlaceToGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.release.xcconfig"; sourceTree = "<group>"; };
+		774C6BA01CEF1BDB0000B502 /* UIColor+PTGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PTGColor.h"; sourceTree = "<group>"; };
+		774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PTGColor.m"; sourceTree = "<group>"; };
+		774C6BA51CEF52D60000B502 /* PTGMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGMenuViewController.h; sourceTree = "<group>"; };
+		774C6BA61CEF52D60000B502 /* PTGMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGMenuViewController.m; sourceTree = "<group>"; };
+		774C6BAA1CEF67640000B502 /* PTGAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGAuthenticationRequest.h; sourceTree = "<group>"; };
+		774C6BAB1CEF67640000B502 /* PTGAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGAuthenticationRequest.m; sourceTree = "<group>"; };
 		775428661CE4BAA200DC5056 /* PTGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGNetworkManager.h; sourceTree = "<group>"; };
 		775428671CE4BAA200DC5056 /* PTGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGNetworkManager.m; sourceTree = "<group>"; };
 		775428691CE4C04000DC5056 /* PTGCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCredentialStore.h; sourceTree = "<group>"; };
 		7754286A1CE4C04000DC5056 /* PTGCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCredentialStore.m; sourceTree = "<group>"; };
 		776A09E21CEA33AC00E6632B /* PTGBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGBaseRequest.h; sourceTree = "<group>"; };
 		776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGBaseRequest.m; sourceTree = "<group>"; };
+		776A0CD51CEE19C100B33590 /* PTGCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLoginViewController.h; sourceTree = "<group>"; };
 		776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLoginViewController.m; sourceTree = "<group>"; };
 		777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSavedPlacesViewController.h; sourceTree = "<group>"; };
@@ -152,7 +172,6 @@
 		4E0CEE321CE37436005C9D85 = {
 			isa = PBXGroup;
 			children = (
-				77ADC28B1CEB47A9002432FA /* Core Data */,
 				77ADC2861CEB3906002432FA /* PTGDataModel.xcdatamodeld */,
 				4E0CEE3D1CE37436005C9D85 /* PlaceToGo */,
 				4E0CEE571CE37437005C9D85 /* PlaceToGoTests */,
@@ -176,6 +195,7 @@
 		4E0CEE3D1CE37436005C9D85 /* PlaceToGo */ = {
 			isa = PBXGroup;
 			children = (
+				774C6B9F1CEF1B650000B502 /* Categories */,
 				777AE71A1CE5FD2C001A77EC /* Networking */,
 				771E71571CE384F200FB83E1 /* Models */,
 				771E71561CE384E700FB83E1 /* Views */,
@@ -228,6 +248,8 @@
 				777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */,
 				776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */,
 				776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */,
+				774C6BA51CEF52D60000B502 /* PTGMenuViewController.h */,
+				774C6BA61CEF52D60000B502 /* PTGMenuViewController.m */,
 			);
 			name = VIewControllers;
 			sourceTree = "<group>";
@@ -235,6 +257,8 @@
 		771E71561CE384E700FB83E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				776A0CD51CEE19C100B33590 /* PTGCategoryCollectionViewCell.h */,
+				776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -242,8 +266,19 @@
 		771E71571CE384F200FB83E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77ADC28B1CEB47A9002432FA /* Core Data */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		774C6B9F1CEF1B650000B502 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				774C6BA01CEF1BDB0000B502 /* UIColor+PTGColor.h */,
+				774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */,
+			);
+			name = Categories;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		777AE71A1CE5FD2C001A77EC /* Networking */ = {
@@ -267,6 +302,8 @@
 				776A09E31CEA33AC00E6632B /* PTGBaseRequest.m */,
 				77ADC2AB1CEB86BA002432FA /* PTGCategoriesRequest.h */,
 				77ADC2AC1CEB86BA002432FA /* PTGCategoriesRequest.m */,
+				774C6BAA1CEF67640000B502 /* PTGAuthenticationRequest.h */,
+				774C6BAB1CEF67640000B502 /* PTGAuthenticationRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -281,6 +318,7 @@
 				77ADC2A71CEB64A6002432FA /* PTGCoreDataHandler.m */,
 			);
 			name = "Core Data";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		77ADC2961CEB47E8002432FA /* Entities */ = {
@@ -508,12 +546,16 @@
 				777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77ADC2A31CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
+				774C6BAC1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
+				774C6BA71CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
+				774C6BA21CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
 				777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */,
 				77ADC2AD1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */,
 				77ADC2881CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
+				776A0CD71CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77ADC29E1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,10 +569,14 @@
 				77ADC2A41CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				77ADC2911CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
+				774C6BA31CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				77ADC2A91CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */,
+				774C6BA81CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
+				774C6BAD1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				77ADC2AE1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2941CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
+				776A0CD81CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC2891CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
 				77ADC29F1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
@@ -546,10 +592,14 @@
 				77ADC2A51CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
 				776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
 				77ADC2921CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
+				774C6BA41CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				77ADC2AA1CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */,
+				774C6BA91CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
+				774C6BAE1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				77ADC2AF1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2951CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
+				776A0CD91CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC28A1CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
 				77ADC2A01CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,

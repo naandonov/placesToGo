@@ -9,9 +9,9 @@
 #import "PTGBaseRequest.h"
 
 @interface PTGCategoriesRequest : PTGBaseRequest
-extern NSString *const nameKey;
-extern NSString *const idKey;
-extern NSString *const iconPathKey;
+extern NSString *const kNameKey;
+extern NSString *const kIDKey;
+extern NSString *const kIconPathKey;
 
 - (instancetype)initRequest;
 - (void)getCategoriesWithCompletion:(void(^)(NSArray <NSDictionary *> *dict, NSError *error))completionHandler;

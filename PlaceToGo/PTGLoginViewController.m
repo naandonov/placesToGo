@@ -7,9 +7,12 @@
 //
 #import "PTGLoginViewController.h"
 #import "PTGNetworkManager.h"
+#import "PTGCredentialStore.h"
+#import "PTGAuthenticationRequest.h"
 
+@interface PTGLoginViewController () <UIWebViewDelegate>
 
-@interface PTGLoginViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *loginWebView;
 
 @end
 
@@ -17,6 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    for(NSHTTPCookie *cookie in [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]) {
+        
+        if([[cookie domain] isEqualToString:@"foursquare.com"]) {
+            
+            [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
+        }
+    }
+    self.loginWebView.delegate = self;
+    PTGAuthenticationRequest *request = [[PTGAuthenticationRequest alloc] initAuthRequest];
+    [self.loginWebView loadRequest:request];
+
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +40,15 @@
     [super didReceiveMemoryWarning];
     
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    if ([request.URL.scheme isEqualToString:@"ptgaccess"]) {
+        NSURLComponents *comps = [NSURLComponents componentsWithURL:request.URL resolvingAgainstBaseURL:NO];
+        NSArray *array = [comps.fragment componentsSeparatedByString:@"="];
+        [PTGCredentialStore setAccessToken:array[1]];
+    }
+    return YES;
 }
 
 /*

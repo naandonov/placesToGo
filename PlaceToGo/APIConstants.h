@@ -11,12 +11,12 @@
 
 @interface APIConstants : NSObject
 
-extern NSString *const foursquareClientID;
-extern NSString *const foursquareClientSecret;
-extern NSString *const foursquareAPIVersion;
-extern NSString *const foursquareVenueEndpoint;
-extern NSString *const foursquareHttpGET;
-extern NSString *const foursquareHttpPOST;
-extern NSString *const foursquareIconSize;
+extern NSString *const kFoursquareClientID;
+extern NSString *const kFoursquareClientSecret;
+extern NSString *const kFoursquareAPIVersion;
+extern NSString *const kFoursquareVenueEndpoint;
+extern NSString *const kFoursquareHttpGET;
+extern NSString *const kFoursquareHttpPOST;
+extern NSString *const kFoursquareIconSize;
 
 @end

@@ -12,8 +12,8 @@
 
 
 static NSString *accessToken;
-static NSString *const accountName = @"PlaceToGoAccountName";
-static NSString *const serviceName = @"PlaceToGoAccountService";
+static NSString *const kAccountName = @"PlaceToGoAccountName";
+static NSString *const kServiceName = @"PlaceToGoAccountService";
 
 @implementation PTGCredentialStore
 
@@ -33,12 +33,12 @@ static NSString *const serviceName = @"PlaceToGoAccountService";
 }
 
 + (void) setAccessToken:(NSString *) token{
-    [SSKeychain setPassword:token forService:serviceName account:accountName];
+    [SSKeychain setPassword:token forService:kServiceName account:kAccountName];
     accessToken = token;
 }
 
 + (void) deleteAccessToken{
-    [SSKeychain deletePasswordForService:serviceName account:accountName];
+    [SSKeychain deletePasswordForService:kServiceName account:kAccountName];
     accessToken = nil;
 }
 

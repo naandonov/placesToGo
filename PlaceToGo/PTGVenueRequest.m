@@ -18,7 +18,7 @@
 @implementation PTGVenueRequest
 
 - (instancetype)initWithURL:(NSURL *) url andParameters:(NSDictionary *) params{
-    self = [super initWithURL:[NSURL URLWithString:foursquareVenueEndpoint]];
+    self = [super initWithURL:[NSURL URLWithString:kFoursquareVenueEndpoint]];
     [self appendURLQueryWithQueries:params];
     return self;
 }

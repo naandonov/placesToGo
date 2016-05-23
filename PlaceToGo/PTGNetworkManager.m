@@ -8,12 +8,12 @@
 
 #import "PTGNetworkManager.h"
 
-static NSString *const imagesDirectoryName = @"Image";
+static NSString *const kImagesDirectoryName = @"Image";
 
 @interface PTGNetworkManager ()
 
 @property (nonatomic, strong) NSURLSession *session;
-@property (nonatomic, strong) NSURLSessionTask *task;
+
 
 @end
 
@@ -33,7 +33,6 @@ static NSString *const imagesDirectoryName = @"Image";
     if(_session){
         return _session;
     }
-    
     _session = [NSURLSession sharedSession];
     return _session;
 }
@@ -48,7 +47,7 @@ static NSString *const imagesDirectoryName = @"Image";
     NSArray *paths = nil;
     paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     documentsDirectory = [paths objectAtIndex:0];
-    documentsDirectory = [documentsDirectory stringByAppendingPathComponent:imagesDirectoryName];
+    documentsDirectory = [documentsDirectory stringByAppendingPathComponent:kImagesDirectoryName];
     imageID = [documentsDirectory stringByAppendingPathComponent:[imageID stringByAppendingPathExtension:@"png"]];
     NSURL *newLocation = [NSURL fileURLWithPath:imageID];
     NSURLSessionDownloadTask *downloadTask = nil;

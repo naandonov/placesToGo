@@ -17,10 +17,10 @@
     if(self){
         NSDictionary *baseParameters = nil;
         if([PTGCredentialStore isThereAuthenticatedUser]){
-            baseParameters = @{@"oauth_token":[PTGCredentialStore getAccessToken],@"v":foursquareAPIVersion};
+            baseParameters = @{@"oauth_token":[PTGCredentialStore getAccessToken],@"v":kFoursquareAPIVersion};
             [self appendURLQueryWithQueries:baseParameters];
         } else {
-            baseParameters = @{@"v":foursquareAPIVersion,@"client_id":foursquareClientID,@"client_secret":foursquareClientSecret};
+            baseParameters = @{@"v":kFoursquareAPIVersion,@"client_id":kFoursquareClientID,@"client_secret":kFoursquareClientSecret};
             [self appendURLQueryWithQueries:baseParameters];
         }
     }
