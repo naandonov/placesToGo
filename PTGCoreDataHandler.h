@@ -10,9 +10,18 @@
 #import "PTGCategoryEntity.h"
 #import "PTGUserSettingsEntity.h"
 #import "PTGCoreDataManager.h"
+#import "PTGAuthenticatedUserEntity.h"
 
 @interface PTGCoreDataHandler : NSObject
 
 + (NSFetchedResultsController *) searchScreenFetchedResultsControllerInContext:(NSManagedObjectContext *)context;
++ (NSArray <PTGAuthenticatedUserEntity *> *)fetchAuthenticatedUsers:(NSManagedObjectContext *)context
+                                                      withPredicate:(NSPredicate *)predicate
+                                                              error:(NSError **)error;
++ (PTGAuthenticatedUserEntity *) insertAuthenticatedUserWithFirstName:(NSString *)firstName
+                                                             lastName:(NSString *)lastName
+                                                                email:(NSString *)email
+                                                         andImagePath:(NSString *)imageLocation
+                                                            inContext:(NSManagedObjectContext *) context;
 + (PTGCategoryEntity *) insertCategoryWithName:(NSString *)name ID:(NSString *)categoryID andImageLocation:(NSString *)imageLocation inContext:(NSManagedObjectContext *) context;
 @end

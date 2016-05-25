@@ -10,6 +10,6 @@
 
 @interface PTGAuthenticationRequest : NSMutableURLRequest
 
-- (instancetype)initAuthRequest;
+- (instancetype)init;
 
 @end

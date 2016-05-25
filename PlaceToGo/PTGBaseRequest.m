@@ -44,7 +44,6 @@
         }
         comps.queryItems = currentQueriesArray;
         self.URL = comps.URL;
-        NSLog(@"%@",self.URL);
     }
 }
 

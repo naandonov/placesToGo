@@ -29,7 +29,13 @@ static NSString *const kServiceName = @"PlaceToGoAccountService";
 #pragma mark - AccessToken manipulation
 
 + (NSString *) getAccessToken{
-    return accessToken;
+    if(accessToken){
+        return accessToken;
+    }
+    if ((accessToken = [SSKeychain passwordForService:kServiceName account:kAccountName])){
+        return accessToken;
+    }
+    return nil;
 }
 
 + (void) setAccessToken:(NSString *) token{

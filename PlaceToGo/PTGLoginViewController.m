@@ -29,11 +29,14 @@
         }
     }
     self.loginWebView.delegate = self;
-    PTGAuthenticationRequest *request = [[PTGAuthenticationRequest alloc] initAuthRequest];
+    PTGAuthenticationRequest *request = [[PTGAuthenticationRequest alloc] init];
     [self.loginWebView loadRequest:request];
 
     
     // Do any additional setup after loading the view.
+}
+- (IBAction)dismiss:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,19 +49,11 @@
     if ([request.URL.scheme isEqualToString:@"ptgaccess"]) {
         NSURLComponents *comps = [NSURLComponents componentsWithURL:request.URL resolvingAgainstBaseURL:NO];
         NSArray *array = [comps.fragment componentsSeparatedByString:@"="];
-        [PTGCredentialStore setAccessToken:array[1]];
+        [PTGCredentialStore setAccessToken:[array lastObject]];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
     return YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

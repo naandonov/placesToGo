@@ -92,7 +92,15 @@
                                                  inContext:[[PTGCoreDataManager sharedManager] managedObjectContext]];
                 [[PTGCoreDataManager sharedManager] saveContext:[[PTGCoreDataManager sharedManager] managedObjectContext]];
             }
+            NSError *fetchError = nil;
+            [self.fetchedResultsController performFetch:&fetchError];
+            if (fetchError) {
+                NSLog(@"Error occured during second fetch of categories! Please refer to the following description:\n%@",error.localizedDescription);
+            }
+            [self.collectionView reloadData];
+
         }];
+        
     }
 }
 

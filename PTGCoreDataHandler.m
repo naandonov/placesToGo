@@ -7,7 +7,7 @@
 //
 
 #import "PTGCoreDataHandler.h"
-
+#import "PTGAuthenticatedUserEntity.h"
 @implementation PTGCoreDataHandler
 
 #pragma mark - NSFetchedResultsController
@@ -24,6 +24,31 @@
     return fetchedRC;
 }
 
+#pragma mark - CoreData fetch requests
+
++ (NSArray <PTGAuthenticatedUserEntity *> *)fetchAuthenticatedUsers:(NSManagedObjectContext *)context
+                                                      withPredicate:(NSPredicate *)predicate
+                                                              error:(NSError **)error {
+    
+    __block NSArray <PTGAuthenticatedUserEntity *> *resultArray = nil;
+    [context performBlockAndWait:^{
+        
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([PTGAuthenticatedUserEntity class])];
+        NSError *fetchError = nil;
+        [fetchRequest setPredicate:predicate];
+        resultArray = [context executeFetchRequest:fetchRequest error:&fetchError];
+        
+        if (fetchError) {
+            *error = fetchError;
+        }
+    }];
+    
+    return resultArray;
+}
+
+
+
+
 #pragma mark - CoreData insert methods
 
 + (PTGCategoryEntity *) insertCategoryWithName:(NSString *)name ID:(NSString *)categoryID andImageLocation:(NSString *)imageLocation inContext:(NSManagedObjectContext *) context{
@@ -35,6 +60,22 @@
         [category setImageLocation:imageLocation];
     }];
     return category;
+}
+
++ (PTGAuthenticatedUserEntity *) insertAuthenticatedUserWithFirstName:(NSString *)firstName
+                                                             lastName:(NSString *)lastName
+                                                                email:(NSString *)email
+                                                         andImagePath:(NSString *)imageLocation
+                                                            inContext:(NSManagedObjectContext *) context{
+    __block PTGAuthenticatedUserEntity *authenticatedUser = nil;
+    [context performBlockAndWait:^{
+        authenticatedUser = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([PTGAuthenticatedUserEntity class]) inManagedObjectContext:context];
+        [authenticatedUser setFirstName:firstName];
+        [authenticatedUser setLastName:lastName];
+        [authenticatedUser setEmail:email];
+        [authenticatedUser setImagePath:imageLocation];
+    }];
+    return authenticatedUser;
 }
 
 @end

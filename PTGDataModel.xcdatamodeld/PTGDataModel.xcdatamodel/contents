@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="PTGAuthenticatedUserEntity" representedClassName="PTGAuthenticatedUserEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="PTGCategoryEntity" representedClassName="PTGCategoryEntity" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imageLocation" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,5 +19,6 @@
     <elements>
         <element name="PTGCategoryEntity" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="PTGUserSettingsEntity" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="PTGAuthenticatedUserEntity" positionX="-54" positionY="27" width="128" height="105"/>
     </elements>
 </model>

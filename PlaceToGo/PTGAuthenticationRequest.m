@@ -13,10 +13,9 @@ NSString *const kFoursquareAuthenticationURL = @"https://foursquare.com/oauth2/a
 
 @implementation PTGAuthenticationRequest
 
-- (instancetype)initAuthRequest{
+- (instancetype)init{
     NSURL *authenticationURL = [NSURL URLWithString:kFoursquareAuthenticationURL];
     self = [super initWithURL:authenticationURL];
-    self.cachePolicy = NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
     self.HTTPMethod = kFoursquareHttpGET;
     return self;
 }
