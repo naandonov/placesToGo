@@ -2,7 +2,7 @@
 //  PTGUserSettingsEntity+CoreDataProperties.m
 //  PlaceToGo
 //
-//  Created by Veselin Cholakov on 5/17/16.
+//  Created by Veselin Cholakov on 5/26/16.
 //  Copyright © 2016 Nikolay Andonov. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,8 +13,9 @@
 
 @implementation PTGUserSettingsEntity (CoreDataProperties)
 
-@dynamic radius;
 @dynamic countLimit;
+@dynamic radius;
 @dynamic sorting;
+@dynamic showClosedVenues;
 
 @end

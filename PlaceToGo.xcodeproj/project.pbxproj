@@ -40,16 +40,27 @@
 		776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0201CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
 		776BF0211CE62EA900FAA72B /* PTGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */; };
+		776D5A8B1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A8A1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m */; };
+		776D5A931CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
+		776D5A941CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
+		776D5A951CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
+		776D5A981CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
+		776D5A991CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
+		776D5A9A1CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
+		776D5A9D1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
+		776D5A9E1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
+		776D5A9F1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
 		777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */; };
 		777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
 		777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
 		777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
+		7782503C1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
+		7782503D1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
+		7782503E1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
+		7782E35F1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */; };
 		77854C8D1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */; };
 		77854C8E1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */; };
 		77854C8F1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */; };
-		77854C921CF360BF00540673 /* PTGLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C911CF360BF00540673 /* PTGLoginButton.m */; };
-		77854C931CF360BF00540673 /* PTGLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C911CF360BF00540673 /* PTGLoginButton.m */; };
-		77854C941CF360BF00540673 /* PTGLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C911CF360BF00540673 /* PTGLoginButton.m */; };
 		77AC1BE31CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
 		77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
 		77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */; };
@@ -137,14 +148,24 @@
 		776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		776BF01B1CE62E7C00FAA72B /* PTGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLoginViewController.h; sourceTree = "<group>"; };
 		776BF01E1CE62EA900FAA72B /* PTGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLoginViewController.m; sourceTree = "<group>"; };
+		776D5A891CF6F666003F92D8 /* UIImage+PTGImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PTGImageUtilities.h"; sourceTree = "<group>"; };
+		776D5A8A1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PTGImageUtilities.m"; sourceTree = "<group>"; };
+		776D5A911CF71F4C003F92D8 /* PTGLogIOTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLogIOTableViewCell.h; sourceTree = "<group>"; };
+		776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLogIOTableViewCell.m; sourceTree = "<group>"; };
+		776D5A961CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGVenuesCountSliderTableViewCell.h; sourceTree = "<group>"; };
+		776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGVenuesCountSliderTableViewCell.m; sourceTree = "<group>"; };
+		776D5A9B1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSegmentControlTableViewCell.h; sourceTree = "<group>"; };
+		776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSegmentControlTableViewCell.m; sourceTree = "<group>"; };
 		777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSavedPlacesViewController.h; sourceTree = "<group>"; };
 		777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSavedPlacesViewController.m; sourceTree = "<group>"; };
 		777AE71B1CE5FD43001A77EC /* APIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstants.h; sourceTree = "<group>"; };
 		777AE71C1CE5FD43001A77EC /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
+		7782503A1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGRadiusSliderTableViewCell.h; sourceTree = "<group>"; };
+		7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGRadiusSliderTableViewCell.m; sourceTree = "<group>"; };
+		7782E35D1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGClosedVenuesSwitchTableViewCell.h; sourceTree = "<group>"; };
+		7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGClosedVenuesSwitchTableViewCell.m; sourceTree = "<group>"; };
 		77854C8B1CF35E0D00540673 /* PTGUserInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGUserInformationCell.h; sourceTree = "<group>"; };
 		77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGUserInformationCell.m; sourceTree = "<group>"; };
-		77854C901CF360BF00540673 /* PTGLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLoginButton.h; sourceTree = "<group>"; };
-		77854C911CF360BF00540673 /* PTGLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLoginButton.m; sourceTree = "<group>"; };
 		77AC1BE11CE63526005A3A14 /* PTGVenueRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGVenueRequest.h; sourceTree = "<group>"; };
 		77AC1BE21CE63526005A3A14 /* PTGVenueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGVenueRequest.m; sourceTree = "<group>"; };
 		77ADC2871CEB3906002432FA /* PTGDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTGDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -282,10 +303,18 @@
 			children = (
 				776A0CD51CEE19C100B33590 /* PTGCategoryCollectionViewCell.h */,
 				776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */,
+				7782E35D1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.h */,
+				7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */,
 				77854C8B1CF35E0D00540673 /* PTGUserInformationCell.h */,
 				77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */,
-				77854C901CF360BF00540673 /* PTGLoginButton.h */,
-				77854C911CF360BF00540673 /* PTGLoginButton.m */,
+				776D5A911CF71F4C003F92D8 /* PTGLogIOTableViewCell.h */,
+				776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */,
+				776D5A961CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.h */,
+				776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */,
+				776D5A9B1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.h */,
+				776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */,
+				7782503A1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.h */,
+				7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,6 +330,8 @@
 		774C6B9F1CEF1B650000B502 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				776D5A891CF6F666003F92D8 /* UIImage+PTGImageUtilities.h */,
+				776D5A8A1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m */,
 				774C6BA01CEF1BDB0000B502 /* UIColor+PTGColor.h */,
 				774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */,
 			);
@@ -573,23 +604,28 @@
 				77854C8D1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */,
 				776101871CF5B5B500006368 /* PTGAuthenticatedUserEntity.m in Sources */,
 				77ADC2901CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
+				776D5A931CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
+				776D5A981CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
 				77ADC2A81CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				77ADC2931CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
 				776A09E41CEA33AC00E6632B /* PTGBaseRequest.m in Sources */,
 				77ADC29B1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
+				7782E35F1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m in Sources */,
 				777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77ADC2A31CEB5E27002432FA /* PTGCoreDataManager.m in Sources */,
-				77854C921CF360BF00540673 /* PTGLoginButton.m in Sources */,
 				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
 				774C6BAC1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				774C6BA71CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
+				7782503C1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
+				776D5A8B1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m in Sources */,
 				774C6BA21CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
 				777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */,
 				77ADC2AD1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				776101841CF5B5B500006368 /* PTGAuthenticatedUserEntity+CoreDataProperties.m in Sources */,
 				776BF01F1CE62EA900FAA72B /* PTGLoginViewController.m in Sources */,
+				776D5A9D1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */,
 				7754286B1CE4C04000DC5056 /* PTGCredentialStore.m in Sources */,
 				77ADC2881CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
 				776A0CD71CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
@@ -602,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7782503D1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
 				77ADC29C1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77854C8E1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */,
@@ -611,11 +648,13 @@
 				774C6BA31CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				77ADC2A91CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */,
+				776D5A941CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */,
+				776D5A9E1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */,
 				774C6BA81CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
 				774C6BAD1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
-				77854C931CF360BF00540673 /* PTGLoginButton.m in Sources */,
 				77ADC2AE1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2941CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
+				776D5A991CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
 				776A0CD81CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC2891CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
@@ -629,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7782503E1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
 				77ADC29D1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77854C8F1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */,
@@ -638,11 +678,13 @@
 				774C6BA41CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
 				77ADC2AA1CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */,
+				776D5A951CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */,
+				776D5A9F1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */,
 				774C6BA91CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
 				774C6BAE1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
-				77854C941CF360BF00540673 /* PTGLoginButton.m in Sources */,
 				77ADC2AF1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2951CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
+				776D5A9A1CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
 				776A0CD91CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC28A1CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,

@@ -8,6 +8,8 @@
 
 #import "PTGCoreDataHandler.h"
 #import "PTGAuthenticatedUserEntity.h"
+#import "PTGUserSettingsEntity.h"
+
 @implementation PTGCoreDataHandler
 
 #pragma mark - NSFetchedResultsController
@@ -46,12 +48,44 @@
     return resultArray;
 }
 
-
-
++ (PTGUserSettingsEntity *)fetchUserSettingsInContext:(NSManagedObjectContext *)context
+                                                error:(NSError **)error{
+    __block NSArray <PTGUserSettingsEntity *> *resultArray = nil;
+    [context performBlockAndWait:^{
+        
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([PTGUserSettingsEntity class])];
+        NSError *fetchError = nil;
+        resultArray = [context executeFetchRequest:fetchRequest error:&fetchError];
+        if(fetchError){
+            *error = fetchError;
+        }
+    }];
+    PTGUserSettingsEntity *settings = [resultArray firstObject];
+    return settings;
+}
 
 #pragma mark - CoreData insert methods
 
-+ (PTGCategoryEntity *) insertCategoryWithName:(NSString *)name ID:(NSString *)categoryID andImageLocation:(NSString *)imageLocation inContext:(NSManagedObjectContext *) context{
++ (PTGUserSettingsEntity *)insertUserSettingsWithCountLimit:(NSNumber *)countLimit
+                                                     radius:(NSNumber *)radius
+                                     closedVenuesVisibility:(BOOL) closedVenuesVisibility
+                                                 andSorting:(NSNumber *)sorting
+                                                  inContext:(NSManagedObjectContext *)context{
+    __block PTGUserSettingsEntity *settings = nil;
+    [context performBlockAndWait:^{
+        settings = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([PTGUserSettingsEntity class]) inManagedObjectContext:context];
+        [settings setCountLimit:countLimit];
+        [settings setRadius: radius];
+        NSNumber *showClosedVenues = [NSNumber numberWithBool:closedVenuesVisibility];
+        [settings setShowClosedVenues:showClosedVenues];
+        [settings setSorting:sorting];
+    }];
+    
+    
+    return settings;
+}
+
++ (PTGCategoryEntity *)insertCategoryWithName:(NSString *)name ID:(NSString *)categoryID andImageLocation:(NSString *)imageLocation inContext:(NSManagedObjectContext *) context{
     __block PTGCategoryEntity *category = nil;
     [context performBlockAndWait:^{
         category = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([PTGCategoryEntity class]) inManagedObjectContext:context];
@@ -62,11 +96,11 @@
     return category;
 }
 
-+ (PTGAuthenticatedUserEntity *) insertAuthenticatedUserWithFirstName:(NSString *)firstName
-                                                             lastName:(NSString *)lastName
-                                                                email:(NSString *)email
-                                                         andImagePath:(NSString *)imageLocation
-                                                            inContext:(NSManagedObjectContext *) context{
++ (PTGAuthenticatedUserEntity *)insertAuthenticatedUserWithFirstName:(NSString *)firstName
+                                                            lastName:(NSString *)lastName
+                                                               email:(NSString *)email
+                                                        andImagePath:(NSString *)imageLocation
+                                                           inContext:(NSManagedObjectContext *) context{
     __block PTGAuthenticatedUserEntity *authenticatedUser = nil;
     [context performBlockAndWait:^{
         authenticatedUser = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([PTGAuthenticatedUserEntity class]) inManagedObjectContext:context];

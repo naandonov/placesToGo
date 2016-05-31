@@ -9,8 +9,13 @@
 #import "PTGCategoryCollectionViewCell.h"
 @interface PTGCategoryCollectionViewCell()
 
+
 @end
 
 @implementation PTGCategoryCollectionViewCell
+
+- (void)awakeFromNib{
+    self.layoutMargins = UIEdgeInsetsZero;
+}
 
 @end

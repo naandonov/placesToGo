@@ -7,8 +7,12 @@
 //
 
 #import "PTGUserInformationCell.h"
-@interface PTGUserInformationCell () <PTGLoginButtonDelegate>
+#import "UIImage+PTGImageUtilities.h"
 
+@interface PTGUserInformationCell () 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mailLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *userAvatarImageView;
 @end
 
 
@@ -16,10 +20,23 @@
 
 -(instancetype)init{
     self = [super init];
-    self.loginButton.delegate = self;
-    self.loginButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+ 
     return self;
 }
 
+- (void)setName:(NSString *) newValue{
+    self.nameLabel.text = newValue;
+}
 
+- (void)setMail:(NSString *) newValue{
+    self.mailLabel.text = newValue;
+}
+
+- (void)setImagePath:(NSString *)avatarImagePath{
+    UIImage *avatarImage = [UIImage imageWithContentsOfFile:avatarImagePath];
+    avatarImage = [avatarImage scaleToSize:self.userAvatarImageView.frame.size];
+    self.userAvatarImageView.clipsToBounds = YES;
+    self.userAvatarImageView.image = avatarImage;
+    self.userAvatarImageView.layer.cornerRadius = avatarImage.size.height/2;
+}
 @end

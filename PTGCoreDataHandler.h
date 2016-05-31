@@ -14,14 +14,29 @@
 
 @interface PTGCoreDataHandler : NSObject
 
-+ (NSFetchedResultsController *) searchScreenFetchedResultsControllerInContext:(NSManagedObjectContext *)context;
++ (NSFetchedResultsController *)searchScreenFetchedResultsControllerInContext:(NSManagedObjectContext *)context;
+
 + (NSArray <PTGAuthenticatedUserEntity *> *)fetchAuthenticatedUsers:(NSManagedObjectContext *)context
                                                       withPredicate:(NSPredicate *)predicate
                                                               error:(NSError **)error;
-+ (PTGAuthenticatedUserEntity *) insertAuthenticatedUserWithFirstName:(NSString *)firstName
-                                                             lastName:(NSString *)lastName
-                                                                email:(NSString *)email
-                                                         andImagePath:(NSString *)imageLocation
-                                                            inContext:(NSManagedObjectContext *) context;
-+ (PTGCategoryEntity *) insertCategoryWithName:(NSString *)name ID:(NSString *)categoryID andImageLocation:(NSString *)imageLocation inContext:(NSManagedObjectContext *) context;
+
++ (PTGUserSettingsEntity *)fetchUserSettingsInContext:(NSManagedObjectContext *)context
+                                                error:(NSError **)error;
+
++ (PTGAuthenticatedUserEntity *)insertAuthenticatedUserWithFirstName:(NSString *)firstName
+                                                            lastName:(NSString *)lastName
+                                                               email:(NSString *)email
+                                                        andImagePath:(NSString *)imageLocation
+                                                           inContext:(NSManagedObjectContext *) context;
+
++ (PTGCategoryEntity *)insertCategoryWithName:(NSString *)name
+                                           ID:(NSString *)categoryID
+                             andImageLocation:(NSString *)imageLocation
+                                    inContext:(NSManagedObjectContext *) context;
+
++ (PTGUserSettingsEntity *)insertUserSettingsWithCountLimit:(NSNumber *)countLimit
+                                                     radius:(NSNumber *)radius
+                                     closedVenuesVisibility:(BOOL) closedVenuesVisibility
+                                                 andSorting:(NSNumber *)sorting
+                                                  inContext:(NSManagedObjectContext *)context;
 @end

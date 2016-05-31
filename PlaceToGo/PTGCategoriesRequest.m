@@ -32,16 +32,16 @@ NSString *const kIconPathKey = @"iconPath";
         NSArray *categoriesArray = [[[NSJSONSerialization JSONObjectWithData:data options:0 error:nil] valueForKey:@"response"] valueForKey:@"categories"];
         NSMutableArray <NSDictionary *> *categoriesDictionary = [[NSMutableArray alloc] init];
         dispatch_group_t group = dispatch_group_create();
-        
+        __block NSInteger increment = 0;
         for (NSDictionary *dict in categoriesArray) {
-            
+
             NSDictionary *icon = [dict valueForKey:@"icon"] ;
             NSString *iconPath = [NSString stringWithFormat:@"%@%@%@",[icon valueForKey:@"prefix"],kFoursquareIconSize,[icon valueForKey:@"suffix"]];
             NSString *categoryID = [dict valueForKey:@"id"];
-            
             dispatch_group_enter(group);
             [[PTGNetworkManager sharedManager] downloadImageFromURL:[NSURL URLWithString:iconPath] andImageID:categoryID completion:^(NSURL *newFileLocation, NSError *imageError) {
-                
+                NSLog(@"%ld",++increment);
+
                 NSString *newIconPath = newFileLocation.absoluteString;
                 newIconPath = [[newIconPath stringByDeletingLastPathComponent] lastPathComponent];
                 newIconPath = [newIconPath stringByAppendingPathComponent:[newFileLocation.absoluteString lastPathComponent]];
@@ -50,17 +50,17 @@ NSString *const kIconPathKey = @"iconPath";
                                                   kIconPathKey:newIconPath}];
                 dispatch_group_leave(group);
             }];
+            
+
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-                NSLog(@"thread");
                 if (completionHandler) {
                     completionHandler(categoriesDictionary,error);
                 }
         });
     }];
 }
-
 
 
 @end

@@ -48,7 +48,11 @@ static NSString *const kImagesDirectoryName = @"Image";
     paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     documentsDirectory = [paths objectAtIndex:0];
     documentsDirectory = [documentsDirectory stringByAppendingPathComponent:kImagesDirectoryName];
-    imageID = [documentsDirectory stringByAppendingPathComponent:[imageID stringByAppendingPathExtension:@"png"]];
+    if(![imageID pathExtension]){
+        imageID = [documentsDirectory stringByAppendingPathComponent:[imageID stringByAppendingPathExtension:@"png"]];
+    }else{
+        imageID = [documentsDirectory stringByAppendingPathComponent:imageID];
+    }
     NSURL *newLocation = [NSURL fileURLWithPath:imageID];
     NSURLSessionDownloadTask *downloadTask = nil;
     

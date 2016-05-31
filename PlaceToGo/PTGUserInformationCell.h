@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PTGLoginButton.h"
 
 
 @interface PTGUserInformationCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *nameValueLabel;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet PTGLoginButton *loginButton;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+
+@property (nonatomic, strong, setter=setName:) NSString *name;
+@property (nonatomic, strong, setter=setMail:) NSString *mail;
+@property (nonatomic, strong, setter=setImagePath:) NSString *avatarImagePath;
+
 
 @end
