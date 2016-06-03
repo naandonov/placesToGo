@@ -15,6 +15,9 @@
 		4E0CEE4E1CE37436005C9D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0CEE4C1CE37436005C9D85 /* LaunchScreen.storyboard */; };
 		4E0CEE591CE37437005C9D85 /* PlaceToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE581CE37437005C9D85 /* PlaceToGoTests.m */; };
 		4E0CEE641CE37437005C9D85 /* PlaceToGoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */; };
+		774548421CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 774548411CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m */; };
+		774548431CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 774548411CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m */; };
+		774548441CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 774548411CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m */; };
 		774C6BA21CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
 		774C6BA31CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
 		774C6BA41CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */; };
@@ -44,9 +47,9 @@
 		776D5A931CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
 		776D5A941CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
 		776D5A951CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */; };
-		776D5A981CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
-		776D5A991CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
-		776D5A9A1CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */; };
+		776D5A981CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGSliderTableViewCell.m */; };
+		776D5A991CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGSliderTableViewCell.m */; };
+		776D5A9A1CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A971CF71F64003F92D8 /* PTGSliderTableViewCell.m */; };
 		776D5A9D1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
 		776D5A9E1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
 		776D5A9F1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */; };
@@ -54,9 +57,6 @@
 		777AE71D1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
 		777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
 		777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 777AE71C1CE5FD43001A77EC /* APIConstants.m */; };
-		7782503C1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
-		7782503D1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
-		7782503E1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */; };
 		7782E35F1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */; };
 		77854C8D1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */; };
 		77854C8E1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */; };
@@ -126,6 +126,9 @@
 		4E0CEE631CE37437005C9D85 /* PlaceToGoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceToGoUITests.m; sourceTree = "<group>"; };
 		4E0CEE651CE37437005C9D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68E27BD73D34DD2CA8E4D5FC /* Pods-PlaceToGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceToGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaceToGo/Pods-PlaceToGo.release.xcconfig"; sourceTree = "<group>"; };
+		774548401CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGShowSliderTableViewCell.h; sourceTree = "<group>"; };
+		774548411CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGShowSliderTableViewCell.m; sourceTree = "<group>"; };
+		7745484B1CFF4210009AEFB2 /* PTGCellVIews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGCellVIews.h; sourceTree = "<group>"; };
 		774C6BA01CEF1BDB0000B502 /* UIColor+PTGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PTGColor.h"; sourceTree = "<group>"; };
 		774C6BA11CEF1BDB0000B502 /* UIColor+PTGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PTGColor.m"; sourceTree = "<group>"; };
 		774C6BA51CEF52D60000B502 /* PTGMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGMenuViewController.h; sourceTree = "<group>"; };
@@ -152,16 +155,14 @@
 		776D5A8A1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PTGImageUtilities.m"; sourceTree = "<group>"; };
 		776D5A911CF71F4C003F92D8 /* PTGLogIOTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGLogIOTableViewCell.h; sourceTree = "<group>"; };
 		776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGLogIOTableViewCell.m; sourceTree = "<group>"; };
-		776D5A961CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGVenuesCountSliderTableViewCell.h; sourceTree = "<group>"; };
-		776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGVenuesCountSliderTableViewCell.m; sourceTree = "<group>"; };
+		776D5A961CF71F64003F92D8 /* PTGSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSliderTableViewCell.h; sourceTree = "<group>"; };
+		776D5A971CF71F64003F92D8 /* PTGSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSliderTableViewCell.m; sourceTree = "<group>"; };
 		776D5A9B1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSegmentControlTableViewCell.h; sourceTree = "<group>"; };
 		776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSegmentControlTableViewCell.m; sourceTree = "<group>"; };
 		777AE7171CE5E40F001A77EC /* PTGSavedPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGSavedPlacesViewController.h; sourceTree = "<group>"; };
 		777AE7181CE5E40F001A77EC /* PTGSavedPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGSavedPlacesViewController.m; sourceTree = "<group>"; };
 		777AE71B1CE5FD43001A77EC /* APIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstants.h; sourceTree = "<group>"; };
 		777AE71C1CE5FD43001A77EC /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
-		7782503A1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGRadiusSliderTableViewCell.h; sourceTree = "<group>"; };
-		7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGRadiusSliderTableViewCell.m; sourceTree = "<group>"; };
 		7782E35D1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGClosedVenuesSwitchTableViewCell.h; sourceTree = "<group>"; };
 		7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGClosedVenuesSwitchTableViewCell.m; sourceTree = "<group>"; };
 		77854C8B1CF35E0D00540673 /* PTGUserInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGUserInformationCell.h; sourceTree = "<group>"; };
@@ -305,16 +306,17 @@
 				776A0CD61CEE19C100B33590 /* PTGCategoryCollectionViewCell.m */,
 				7782E35D1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.h */,
 				7782E35E1CF8864500158A88 /* PTGClosedVenuesSwitchTableViewCell.m */,
+				7745484B1CFF4210009AEFB2 /* PTGCellVIews.h */,
 				77854C8B1CF35E0D00540673 /* PTGUserInformationCell.h */,
 				77854C8C1CF35E0D00540673 /* PTGUserInformationCell.m */,
 				776D5A911CF71F4C003F92D8 /* PTGLogIOTableViewCell.h */,
 				776D5A921CF71F4C003F92D8 /* PTGLogIOTableViewCell.m */,
-				776D5A961CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.h */,
-				776D5A971CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m */,
+				776D5A961CF71F64003F92D8 /* PTGSliderTableViewCell.h */,
+				776D5A971CF71F64003F92D8 /* PTGSliderTableViewCell.m */,
 				776D5A9B1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.h */,
 				776D5A9C1CF71F85003F92D8 /* PTGSegmentControlTableViewCell.m */,
-				7782503A1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.h */,
-				7782503B1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m */,
+				774548401CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.h */,
+				774548411CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -488,6 +490,7 @@
 				TargetAttributes = {
 					4E0CEE3A1CE37436005C9D85 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7QR9ZUTNCA;
 					};
 					4E0CEE531CE37437005C9D85 = {
 						CreatedOnToolsVersion = 7.2;
@@ -606,7 +609,7 @@
 				77ADC2901CEB47E4002432FA /* PTGCategoryEntity+CoreDataProperties.m in Sources */,
 				776D5A931CF71F4C003F92D8 /* PTGLogIOTableViewCell.m in Sources */,
 				4E0CEE431CE37436005C9D85 /* PTGAppDelegate.m in Sources */,
-				776D5A981CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
+				776D5A981CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */,
 				77ADC2A81CEB64A6002432FA /* PTGCoreDataHandler.m in Sources */,
 				77ADC2931CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
 				776A09E41CEA33AC00E6632B /* PTGBaseRequest.m in Sources */,
@@ -617,9 +620,9 @@
 				775428681CE4BAA200DC5056 /* PTGNetworkManager.m in Sources */,
 				774C6BAC1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				774C6BA71CEF52D60000B502 /* PTGMenuViewController.m in Sources */,
-				7782503C1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
 				776D5A8B1CF6F666003F92D8 /* UIImage+PTGImageUtilities.m in Sources */,
 				774C6BA21CEF1BDB0000B502 /* UIColor+PTGColor.m in Sources */,
+				774548421CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */,
 				4E0CEE401CE37436005C9D85 /* main.m in Sources */,
 				777AE7191CE5E40F001A77EC /* PTGSavedPlacesViewController.m in Sources */,
 				77ADC2AD1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
@@ -638,7 +641,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7782503D1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
 				77ADC29C1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71E1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77854C8E1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */,
@@ -654,11 +656,12 @@
 				774C6BAD1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				77ADC2AE1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2941CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
-				776D5A991CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
+				776D5A991CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */,
 				776A0CD81CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE41CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC2891CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
 				776101881CF5B5B500006368 /* PTGAuthenticatedUserEntity.m in Sources */,
+				774548431CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */,
 				77ADC29F1CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 				776101851CF5B5B500006368 /* PTGAuthenticatedUserEntity+CoreDataProperties.m in Sources */,
 			);
@@ -668,7 +671,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7782503E1CFDE05A005BF93F /* PTGRadiusSliderTableViewCell.m in Sources */,
 				77ADC29D1CEB4891002432FA /* PTGUserSettingsEntity+CoreDataProperties.m in Sources */,
 				777AE71F1CE5FD43001A77EC /* APIConstants.m in Sources */,
 				77854C8F1CF35E0D00540673 /* PTGUserInformationCell.m in Sources */,
@@ -684,11 +686,12 @@
 				774C6BAE1CEF67640000B502 /* PTGAuthenticationRequest.m in Sources */,
 				77ADC2AF1CEB86BA002432FA /* PTGCategoriesRequest.m in Sources */,
 				77ADC2951CEB47E4002432FA /* PTGCategoryEntity.m in Sources */,
-				776D5A9A1CF71F64003F92D8 /* PTGVenuesCountSliderTableViewCell.m in Sources */,
+				776D5A9A1CF71F64003F92D8 /* PTGSliderTableViewCell.m in Sources */,
 				776A0CD91CEE19C100B33590 /* PTGCategoryCollectionViewCell.m in Sources */,
 				77AC1BE51CE63526005A3A14 /* PTGVenueRequest.m in Sources */,
 				77ADC28A1CEB3906002432FA /* PTGDataModel.xcdatamodeld in Sources */,
 				776101891CF5B5B500006368 /* PTGAuthenticatedUserEntity.m in Sources */,
+				774548441CFF0C02009AEFB2 /* PTGShowSliderTableViewCell.m in Sources */,
 				77ADC2A01CEB4891002432FA /* PTGUserSettingsEntity.m in Sources */,
 				776101861CF5B5B500006368 /* PTGAuthenticatedUserEntity+CoreDataProperties.m in Sources */,
 			);
@@ -816,10 +819,14 @@
 			baseConfigurationReference = D7B669222B13A6E9D0ED7CBF /* Pods-PlaceToGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlaceToGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mm.PlaceToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -829,10 +836,14 @@
 			baseConfigurationReference = 68E27BD73D34DD2CA8E4D5FC /* Pods-PlaceToGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlaceToGo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mm.PlaceToGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

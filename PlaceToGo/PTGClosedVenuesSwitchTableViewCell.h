@@ -10,5 +10,6 @@
 
 @interface PTGClosedVenuesSwitchTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UISwitch *switchControl;
 
 @end

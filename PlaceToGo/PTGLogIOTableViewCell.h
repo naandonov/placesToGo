@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PTGLogIOTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *cellLabel;
+
 
 @end

@@ -65,7 +65,7 @@
 }
 
 #pragma mark - CoreData insert methods
-
+//TODO: create a new insert method with only managed object context as parameter
 + (PTGUserSettingsEntity *)insertUserSettingsWithCountLimit:(NSNumber *)countLimit
                                                      radius:(NSNumber *)radius
                                      closedVenuesVisibility:(BOOL) closedVenuesVisibility
